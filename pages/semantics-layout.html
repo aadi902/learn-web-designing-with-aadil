@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantic Structure</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        gap: 10px;
+      }
+
+      header {
+        background: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      nav {
+        background: #2196f3;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+      }
+
+      main {
+        background: #fff;
+        border: 3px solid #ff9800;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      section {
+        background: #fff3cd;
+        border: 2px solid #ffc107;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      article {
+        background: #ffe6e6;
+        border: 2px solid #f44336;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 8px;
+      }
+
+      aside {
+        background: #e8eaf6;
+        border: 2px solid #3f51b5;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+      }
+
+      .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      article {
+        background: #ffe6e6;
+        border: 2px solid #f44336;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .img-box {
+        width: 100%;
+        height: 120px;
+        background: #ddd;
+        border: 2px dashed #666;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .content-box {
+        width: 100%;
+        height: 120px;
+        background: #ffe6e6;
+        border: 2px solid #f44336;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <header>
+        <h2>&lt;header&gt;</h2>
+      </header>
+
+      <nav>
+        <h2>&lt;nav&gt;</h2>
+      </nav>
+
+      <div class="content">
+        <main>
+          <h2>&lt;main&gt;</h2>
+
+          <section>
+            <h2>&lt;section&gt;</h2>
+
+            <div
+              class="img-box"
+              style="display: inline-block; width: 49%;text-align: center;"
+            >
+              image
+            </div>
+
+            <div class="content-box" style="display: inline-block;margin-left:10px; width: 48%;top:15px;position: relative;">
+              <p>Content</p>
+            </div>
+          </section>
+
+          <br />
+
+          <section>
+            <h2>&lt;section&gt;</h2>
+
+            <div class="articles">
+              <article>
+                <h2>&lt;article&gt;</h2>
+
+                <div class="img-box">Image</div>
+
+                <p>Article content goes here.</p>
+              </article>
+
+              <article>
+                <h2>&lt;article&gt;</h2>
+
+                <div class="img-box">Image</div>
+
+                <p>Article content goes here.</p>
+              </article>
+            </div>
+          </section>
+        </main>
+
+        <aside>
+          <h2>&lt;aside&gt;</h2>
+          <p>Related links, ads, or extra information.</p>
+        </aside>
+      </div>
+
+      <footer>
+        <h2>&lt;footer&gt;</h2>
+      </footer>
+    </div>
+  </body>
+</html>

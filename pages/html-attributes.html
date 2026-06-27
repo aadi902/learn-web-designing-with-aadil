@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Attributes</title>
+
+    <style>
+      .service {
+        background-color: gray;
+        border: 1px solid red;
+        width: 30%;
+        padding: 20px;
+        display: inline-block;
+      }
+
+      .service span {
+        font-size: 80%;
+        background-color: green;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #ourServices {
+        background-color: aqua;
+        padding: 5px;
+      }
+
+      #ourServices h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+        <li>
+            <a href="#about">About</a>
+            <a href="#ourServices">Our Services</a>
+            <a href="#contactus">Contact Us</a>
+            <a href="company.html#testimonials">Reviews</a>
+        </li>
+    </ul>
+    <img src="../images/logo.png" alt="">
+
+    <div id="about">
+      <h1>About Us</h1>
+      <p>
+        This is dummy about us text. This is dummy about us text. This is dummy
+        about us text. This is dummy about us text. This is dummy about us
+        text.This is dummy about us text.This is dummy about us text.This is
+        dummy about us text.
+      </p>
+    </div>
+
+    <div id="contactus">
+      <h1>Contact Us</h1>
+
+      <form action="">
+        <input type="text" placeholder="enter full name" /><br />
+        <input type="email" placeholder="enter email" /><br />
+        <textarea name="" id="" rows="5"></textarea><br />
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <div id="ourServices">
+      <h1>Our Services</h1>
+
+      <div class="service">
+        <h2>Web Development</h2>
+        <p>
+          We build blazing-fast, secure, and responsive websites tailored to
+          your brand.
+        </p>
+        <span>Responsive Design</span> <span>Mobile Friendly</span>
+      </div>
+
+      <div class="service">
+        <h2>Graphic Designing</h2>
+        <p>
+          We craft visually stunning graphic design solutions Graphic Design
+          Services that capture your brand’s essence
+        </p>
+        <span>Professional Design</span> <span>Result Oriented</span>
+      </div>
+
+      <div class="service">
+        <h2>Digital Maketing</h2>
+        <p>
+          We craft visually stunning graphic design solutions Graphic Design
+          Services that capture your brand’s essence
+        </p>
+        <span>SEO</span> <span>Social Media Marketing</span>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

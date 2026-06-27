@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+    </head>
+    
+    <body>
+        <h1>Form</h1>
+        
+        <form action="" style="width: 300px;">
+            <fieldset>
+                <legend>Login:</legend>
+
+                <!-- <label for="name">Name:</label><br>
+                <input type="text" placeholder="Enter your name.."><br> -->
+
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="Enter your email.."><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="Enter your password.."><br>
+
+                <label for="remember">
+                    <input type="checkbox" value="1"> Remember me?
+                </label><br>
+
+                <button type="submit">Login</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+
+                <label for="education">Education:</label>
+                <select name="" id="">
+                    <option value="10">Matric</option>
+                    <option value="12">Intermediate</option>
+                    <option value="14">Bachelor</option>
+                    <option value="16">Master</option>
+                </select>
+
+            </fieldset>
+        </form>
+
+        <form method="GET" style="display: none;">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="full_name">Full Name (*):</label>
+                        </td>
+
+                        <td>
+                            <input type="text" placeholder="Enter Your Name" id="full_name" name="name"  minlength="3" maxlength="10" autocomplete="off" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="email" id="email" name="email" value="info@gmail.com" readonly >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="password" name="password" id="password" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender</label>
+                        </td>
+                        
+                        <td>
+                            <label for="male">
+                                <input type="radio" name="gender" value="male" id="male"> Male
+                            </label> <br>
+
+                            <label for="female">
+                                <input type="radio" name="gender" value="female" id="female"> Female 
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="languages">Languages</label>
+                        </td>
+                        
+                        <td>
+                            <label for="english">
+                                <input type="checkbox" name="" value="english" id="english">English
+                            </label> <br>
+
+                            <label for="urdu">
+                                <input type="checkbox" name="" value="urdu" id="urdu">Urdu
+                            </label> <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dob">DOB:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="date" name="dob" id="dob">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="education_lvl">Education</label>
+                        </td>
+                        
+                        <td>
+                            <select name="education" id="education_lvl">
+                                <option value="">--Select--</option>
+                                <option value="10">Matric</option>
+                                <option value="12">Intermediate</option>
+                                <option value="14">Bachelor</option>
+                                <option value="16">Master</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="obtain_marks">Obtain Marks:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="number" name="obtain_marks" id="obtain_marks" min="0" max="1000">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="total_marks">Total Marks:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="number" name="total_marks" id="total_marks" min="0" max="1000">
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                            <label for="percentage">Percentage</label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" name="percentage" id="percentage" readonly disabled>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="qty">Quantity:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="number" name="qty" id="qty" min="3" max="15" step="3">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Tel:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="tel" name="phone" inputmode="numeric" id="phone" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="search">Search Keyword</label>
+                        </td>
+
+                        <td>
+                            <input type="search" name="keyword" id="search" placeholder="Enter search keyword...">
+                        </td>
+                    </tr> 
+                    
+                    
+                    <tr>
+                        <td>
+                            <label for="price">Price Range:</label>
+                        </td>
+
+                        <td>
+                            <input type="range" min="500" max="5000" value="1500">
+                        </td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>
+                            <label for="cities">City:</label>
+                        </td>
+                        
+                        <td>
+                            <input type="text" name="" list="citiesOptions" id="cities">
+
+                            <datalist id="citiesOptions">
+                                <option value="Attock">Punjab</option>
+                                <option value="Bahawalpur">Punjab</option>
+                                <option value="Sargodha">Punjab</option>
+                                <option value="Lahore">Punjab</option>
+                                <option value="Karachi">Sindh</option>
+                                <option value="Sukkur">Sindh</option>
+                                <option value="Quetta">Baolchistan</option>
+                                <option value="Nowshera">KPK</option>
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="vacany">Post/ Job Title</label>
+                        </td>
+                        
+                        <td>
+                            <select name="" id="">
+                                <optgroup label="Web Developer">
+                                    <option value="Frontend Developer">Frontend Developer</option>
+                                    <option value="Backend Developer">Backend Developer</option>
+                                    <option value="Fullstack Developer">Fullstack Developer</option>
+                                </optgroup>
+
+                                <optgroup label="Digital Marketing">
+                                    <option value="Social Media Marketing">Social Media Marketing</option>
+                                    <option value="Google Ads">Google Ads</option>
+                                    <option value="SEO">SEO</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="datetime">Appointment Date & Time</label>
+                        </td>
+                        
+                        <td>
+                            <input type="datetime-local" name="" id="datetime" >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="education_completed">Education Completed</label>
+                        </td>
+                        
+                        <td>
+                            <input type="month" name="" id="education_completed">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="my_website">Website</label>
+                        </td>
+                        
+                        <td>
+                            <input type="url" name="" id="my_website">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="fav_color">Favourite Color</label>
+                        </td>
+                        
+                        <td>
+                            <input type="color" name="" list id="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="cv">CV</label>
+                        </td>
+                        
+                        <td>
+                           <input type="file" name="" accept="image/png"  id="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="photo">Profile Picture</label>
+                        </td>
+                        
+                        <td>
+                           <label for="profile_pic">
+                            <img src="../images/user.jpg" width="50">
+                           </label>
+
+                           <input type="file" name="" style="display:none;" id="profile_pic">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Introduction:</label>
+                        </td>
+                        
+                        <td>
+                           <textarea name="" id="" placeholder="Enter about yourself.." rows="5" cols="25"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        
+                        <td>
+                            <!-- <input type="reset" value="Reset">
+                            <input type="button" value="Confirm" onclick="alert('Please fill are the required fields/ inputs')" >
+                            <input type="submit" value="Save"> -->
+                            <button type="submit">Submit</button>
+                            <button type="button">Button</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            
+
+            
+        </form>
+
+        
+    </body>
+</html>

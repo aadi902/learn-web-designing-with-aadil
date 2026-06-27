@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowthBoost Digital Marketing Agency</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #38bdf8;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #38bdf8;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        background: #38bdf8;
+        color: #fff;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #0ea5e9;
+        transform: translateY(-2px);
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+      }
+
+      .hero-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+        align-items: center;
+      }
+
+      .hero-text h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .hero-text h1 span {
+        color: #38bdf8;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+        color: #cbd5e1;
+        margin-bottom: 30px;
+      }
+
+      .hero-image img {
+        width: 100%;
+      }
+
+      .stats {
+        display: flex;
+        gap: 30px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .stat h2 {
+        color: #38bdf8;
+      }
+
+      section {
+        padding: 90px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+      }
+
+      .section-title p {
+        color: #94a3b8;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: #1e293b;
+        padding: 30px;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        border: 1px solid #38bdf8;
+      }
+
+      .card h3 {
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        color: #cbd5e1;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+        align-items: center;
+      }
+
+      .about img {
+        width: 100%;
+        border-radius: 20px;
+      }
+
+      .testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .testimonial {
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 15px;
+      }
+
+      .testimonial p {
+        color: #cbd5e1;
+        margin-bottom: 15px;
+      }
+
+      .cta {
+        text-align: center;
+        background: linear-gradient(135deg, #0284c7, #38bdf8);
+        border-radius: 25px;
+        padding: 70px 20px;
+      }
+
+      .cta h2 {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #020617;
+        color: #94a3b8;
+      }
+
+      @media (max-width: 768px) {
+        .hero-text h1 {
+          font-size: 2.5rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">GrowthBoost</div>
+          <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Grow Your Business With <span>Digital Marketing</span></h1>
+          <p>
+            We help brands increase traffic, generate leads, and boost revenue
+            through data-driven marketing strategies.
+          </p>
+
+          <a href="#contact" class="btn">Get Free Consultation</a>
+
+          <div class="stats">
+            <div class="stat">
+              <h2>500+</h2>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h2>250%</h2>
+              <p>Average ROI</p>
+            </div>
+            <div class="stat">
+              <h2>100+</h2>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900"
+            alt="Digital Marketing"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <p>Solutions designed to accelerate your growth.</p>
+        </div>
+
+        <div class="services">
+          <div class="card">
+            <h3>SEO Optimization</h3>
+            <p>Improve search rankings and drive organic traffic.</p>
+          </div>
+
+          <div class="card">
+            <h3>Social Media Marketing</h3>
+            <p>Build engagement and grow your online community.</p>
+          </div>
+
+          <div class="card">
+            <h3>PPC Advertising</h3>
+            <p>Generate qualified leads with targeted ad campaigns.</p>
+          </div>
+
+          <div class="card">
+            <h3>Content Marketing</h3>
+            <p>
+              Create compelling content that converts visitors into customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <img
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900"
+          alt="Marketing Team"
+        />
+
+        <div>
+          <h2>Why Choose Us?</h2>
+          <p style="margin: 20px 0; color: #cbd5e1">
+            Our team combines creativity, analytics, and performance marketing
+            to help businesses achieve measurable growth. We focus on strategies
+            that deliver real business results.
+          </p>
+
+          <a href="#contact" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Clients Say</h2>
+          <p>Trusted by businesses worldwide.</p>
+        </div>
+
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>
+              "Our leads increased by 300% within six months. Outstanding
+              service and communication."
+            </p>
+            <h4>Sarah Johnson</h4>
+          </div>
+
+          <div class="testimonial">
+            <p>
+              "The ROI from our advertising campaigns exceeded expectations."
+            </p>
+            <h4>Michael Lee</h4>
+          </div>
+
+          <div class="testimonial">
+            <p>"Professional team that truly understands digital growth."</p>
+            <h4>Emily Carter</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="cta">
+          <h2>Ready To Scale Your Business?</h2>
+          <p style="margin-bottom: 25px">
+            Schedule a free strategy session with our experts today.
+          </p>
+          <a href="#" class="btn" style="background: #0f172a">
+            Book Free Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 GrowthBoost Digital Marketing Agency. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
